@@ -13,3 +13,17 @@ if (leftWrapEl.classList.contains('show')) {
 		toggleEl.classList.add('show')
 	}
 })
+
+
+// 모바일 더보기 버튼 추가
+const smenumoreEl = document.querySelector('.smenumore')
+const sMenuEl = document.querySelector('.sMenu')
+smenumoreEl.addEventListener('click', () => {
+if (sMenuEl.classList.contains('show')) {
+	sMenuEl.classList.remove('show')
+}
+
+else{
+	sMenuEl.classList.add('show')
+}
+})
